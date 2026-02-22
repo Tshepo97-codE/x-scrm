@@ -1,0 +1,51 @@
+vendor_id,vendor_name,industry,region,cve_count,avg_cve_severity,has_iso27001,soc2_compliant,popia_compliant,incident_count,incident_severity,data_sensitivity,api_access_level,vendor_criticality,risk_score,risk_drivers,risk_tier
+V001,Vendor_1,SaaS,Local,5,0.58,1,0,0,3,Low,Confidential,No Access,High,50,"['Missing ISO/SOC2 certification', 'Non-POPIA compliant', 'Multiple past incidents']",Medium
+V002,Vendor_2,FinTech,Local,4,3.04,1,0,0,1,Low,Public,No Access,High,40,"['Missing ISO/SOC2 certification', 'Non-POPIA compliant']",Medium
+V003,Vendor_3,FinTech,Local,4,4.56,0,1,0,1,Medium,Confidential,Limited,Low,40,"['Missing ISO/SOC2 certification', 'Non-POPIA compliant']",Medium
+V004,Vendor_4,Cloud,International,4,0.65,1,1,0,3,Low,Internal,No Access,Low,30,"['Non-POPIA compliant', 'Multiple past incidents']",Low
+V005,Vendor_5,Consulting,Local,3,4.95,1,1,1,0,Low,Confidential,Limited,High,20,[],Low
+V006,Vendor_6,SaaS,International,6,9.7,0,1,1,4,High,Public,Privileged,Low,50,"['High CVE severity', 'Missing ISO/SOC2 certification', 'Multiple past incidents']",Medium
+V007,Vendor_7,SaaS,Local,2,3.25,1,0,0,1,Low,Internal,Limited,Medium,30,"['Missing ISO/SOC2 certification', 'Non-POPIA compliant']",Low
+V008,Vendor_8,Payments,Local,4,8.02,1,1,0,0,High,Internal,Privileged,High,55,"['High CVE severity', 'Non-POPIA compliant', 'High criticality + privileged access']",Medium
+V009,Vendor_9,SaaS,Local,3,8.15,0,0,1,3,Medium,Internal,Privileged,High,55,"['High CVE severity', 'Missing ISO/SOC2 certification', 'High criticality + privileged access', 'Multiple past incidents']",Medium
+V010,Vendor_10,FinTech,Local,5,3.11,1,0,0,0,Low,Internal,Limited,Medium,30,"['Missing ISO/SOC2 certification', 'Non-POPIA compliant']",Low
+V011,Vendor_11,SaaS,Local,8,4.94,1,0,1,1,Medium,Confidential,Limited,Low,35,['Missing ISO/SOC2 certification'],Low
+V012,Vendor_12,Payments,Local,1,0.31,0,1,1,1,High,Internal,Limited,Low,10,['Missing ISO/SOC2 certification'],Low
+V013,Vendor_13,Cloud,International,6,2.9,0,0,0,0,Low,Confidential,No Access,High,55,"['Missing ISO/SOC2 certification', 'Non-POPIA compliant']",Medium
+V014,Vendor_14,Consulting,Local,11,2.28,1,1,1,1,High,Internal,Privileged,Low,25,['High CVE count'],Low
+V015,Vendor_15,SaaS,International,1,5.11,1,0,1,1,Medium,Public,Limited,Low,20,['Missing ISO/SOC2 certification'],Low
+V016,Vendor_16,Payments,Local,4,7.03,0,1,0,0,Low,Internal,No Access,High,55,"['High CVE severity', 'Missing ISO/SOC2 certification', 'Non-POPIA compliant']",Medium
+V017,Vendor_17,FinTech,Local,6,6.1,1,1,0,1,Low,Internal,Limited,Low,45,['Non-POPIA compliant'],Medium
+V018,Vendor_18,SaaS,Local,4,9.86,0,0,1,0,Low,Confidential,No Access,Low,25,"['High CVE severity', 'Missing ISO/SOC2 certification']",Low
+V019,Vendor_19,Consulting,Local,8,8.35,1,1,0,0,High,Confidential,Privileged,Low,50,"['High CVE severity', 'Non-POPIA compliant']",Medium
+V020,Vendor_20,Payments,International,2,6.78,1,1,1,0,Low,Public,No Access,Low,10,[],Low
+V021,Vendor_21,Payments,Local,5,9.37,0,0,0,0,Low,Confidential,Privileged,Low,45,"['High CVE severity', 'Missing ISO/SOC2 certification', 'Non-POPIA compliant']",Medium
+V022,Vendor_22,Cloud,Local,5,8.17,0,1,0,1,High,Public,Limited,High,55,"['High CVE severity', 'Missing ISO/SOC2 certification', 'Non-POPIA compliant']",Medium
+V023,Vendor_23,Consulting,Local,5,3.49,0,1,0,4,Medium,Internal,No Access,Low,40,"['Missing ISO/SOC2 certification', 'Non-POPIA compliant', 'Multiple past incidents']",Medium
+V024,Vendor_24,SaaS,International,4,1.01,1,1,1,1,Medium,Confidential,No Access,High,10,[],Low
+V025,Vendor_25,SaaS,Local,5,2.37,1,1,0,0,Low,Public,No Access,High,30,['Non-POPIA compliant'],Low
+V026,Vendor_26,Consulting,Local,6,2.65,1,0,1,0,Medium,Public,No Access,Medium,25,['Missing ISO/SOC2 certification'],Low
+V027,Vendor_27,FinTech,Local,8,7.22,0,0,0,0,Low,Public,Limited,Medium,60,"['High CVE severity', 'Missing ISO/SOC2 certification', 'Non-POPIA compliant']",Medium
+V028,Vendor_28,Consulting,Local,2,9.4,1,0,0,2,Medium,Public,Limited,Medium,55,"['High CVE severity', 'Missing ISO/SOC2 certification', 'Non-POPIA compliant', 'Multiple past incidents']",Medium
+V029,Vendor_29,Consulting,International,2,9.67,1,1,0,2,Low,Internal,No Access,Low,45,"['High CVE severity', 'Non-POPIA compliant', 'Multiple past incidents']",Medium
+V030,Vendor_30,FinTech,Local,6,5.7,1,0,0,0,High,Internal,Privileged,High,75,"['Missing ISO/SOC2 certification', 'Non-POPIA compliant', 'High criticality + privileged access']",High
+V031,Vendor_31,Cloud,Local,8,2.94,0,0,0,4,High,Public,Privileged,Low,55,"['Missing ISO/SOC2 certification', 'Non-POPIA compliant', 'Multiple past incidents']",Medium
+V032,Vendor_32,Consulting,Local,8,5.78,0,0,0,0,Medium,Confidential,Privileged,High,75,"['Missing ISO/SOC2 certification', 'Non-POPIA compliant', 'High criticality + privileged access']",High
+V033,Vendor_33,FinTech,International,4,0.37,1,0,1,1,Low,Internal,Limited,Low,10,['Missing ISO/SOC2 certification'],Low
+V034,Vendor_34,Payments,International,5,0.52,1,0,0,1,Medium,Confidential,Privileged,Low,30,"['Missing ISO/SOC2 certification', 'Non-POPIA compliant']",Low
+V035,Vendor_35,SaaS,Local,8,0.25,1,0,1,3,Low,Public,Limited,Medium,35,"['Missing ISO/SOC2 certification', 'Multiple past incidents']",Low
+V036,Vendor_36,Cloud,International,3,7.15,1,0,1,1,High,Public,No Access,Medium,25,"['High CVE severity', 'Missing ISO/SOC2 certification']",Low
+V037,Vendor_37,SaaS,Local,7,0.14,0,1,1,0,High,Public,Privileged,Medium,25,['Missing ISO/SOC2 certification'],Low
+V038,Vendor_38,Cloud,International,1,8.55,1,1,0,1,Low,Confidential,Limited,Medium,35,"['High CVE severity', 'Non-POPIA compliant']",Low
+V039,Vendor_39,SaaS,Local,3,4.34,1,0,1,1,Low,Confidential,Limited,High,30,['Missing ISO/SOC2 certification'],Low
+V040,Vendor_40,Consulting,Local,4,8.56,0,0,0,1,High,Public,Limited,High,55,"['High CVE severity', 'Missing ISO/SOC2 certification', 'Non-POPIA compliant']",Medium
+V041,Vendor_41,FinTech,Local,2,5.86,1,0,0,2,Medium,Internal,No Access,Medium,50,"['Missing ISO/SOC2 certification', 'Non-POPIA compliant', 'Multiple past incidents']",Medium
+V042,Vendor_42,Cloud,Local,8,1.01,0,1,1,0,High,Confidential,No Access,Low,25,['Missing ISO/SOC2 certification'],Low
+V043,Vendor_43,Cloud,Local,2,3.19,1,0,0,1,High,Internal,Limited,High,40,"['Missing ISO/SOC2 certification', 'Non-POPIA compliant']",Medium
+V044,Vendor_44,Cloud,International,7,2.82,0,0,1,0,Low,Internal,No Access,Low,25,['Missing ISO/SOC2 certification'],Low
+V045,Vendor_45,Consulting,International,10,7.55,1,0,0,0,Low,Confidential,No Access,Medium,60,"['High CVE severity', 'Missing ISO/SOC2 certification', 'Non-POPIA compliant']",Medium
+V046,Vendor_46,Payments,International,6,9.05,0,1,1,0,High,Confidential,Limited,High,50,"['High CVE severity', 'Missing ISO/SOC2 certification']",Medium
+V047,Vendor_47,FinTech,International,7,6.73,0,0,1,3,Low,Confidential,Limited,Low,45,"['Missing ISO/SOC2 certification', 'Multiple past incidents']",Medium
+V048,Vendor_48,SaaS,International,4,3.51,1,1,1,0,High,Confidential,No Access,Medium,0,[],Low
+V049,Vendor_49,FinTech,Local,4,7.01,1,0,1,0,Low,Confidential,Privileged,High,45,"['High CVE severity', 'Missing ISO/SOC2 certification', 'High criticality + privileged access']",Medium
+V050,Vendor_50,Cloud,International,3,9.87,1,0,1,1,High,Internal,Privileged,Low,25,"['High CVE severity', 'Missing ISO/SOC2 certification']",Low
