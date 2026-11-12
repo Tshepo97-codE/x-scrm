@@ -1,11 +1,12 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import ast
 from pathlib import Path
 
 st.set_page_config(page_title="X-SCRM DASHBOARD", layout="wide")
 
-st.title("X-SRCM -- Vendor Risk Dashboard")
+st.title("X-SCRM -- Vendor Risk Dashboard")
 st.subheader("Third-Party Cyber Risk Assessment")
 
 # Load scored data
@@ -15,6 +16,8 @@ try:
 except FileNotFoundError:
     st.error(f"Data file not found at {data_path}. Please run the risk scoring script first.")
     st.stop()
+
+df["risk_breakdown"] = df["risk_breakdown"].apply(ast.literal_eval)
 
 # Sidebar filters (applied before any display)
 st.sidebar.header("Filter Options")
@@ -79,6 +82,18 @@ if len(filtered_df) > 0:
     )
     
     vendor_data = filtered_df[filtered_df["vendor_name"] == selected_vendor].iloc[0]
+
+    st.subheader("Risk Component Scores")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.metric("Cybersecurity", f"{vendor_data['cyber_score']}/40")
+        st.metric("Business Criticality", f"{vendor_data['business_score']}/20")
+
+    with col2:
+        st.metric("Compliance", f"{vendor_data['compliance_score']}/30")
+        st.metric("Incident History", f"{vendor_data['incident_score']}/10")
     
     col1, col2, col3 = st.columns(3)
     col1.metric("Risk Score", vendor_data["risk_score"])
@@ -87,5 +102,7 @@ if len(filtered_df) > 0:
     
     st.write("**Risk Drivers:**")
     st.write(vendor_data["risk_drivers"])
+    st.write("**Risk Breakdown:**")
+    st.json(vendor_data["risk_breakdown"])
 else:
     st.info("No vendors available to view details.")
